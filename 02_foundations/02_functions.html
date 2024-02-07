@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funktionen</title>
+</head>
+<body>
+    <h1>Funktionen</h1>
+
+    <div style="display: flex">
+        <ul id="result"></ul>
+        <ul id="answer"></ul>
+        <ul id="prices"></ul>
+    </div>
+
+    <script>
+        const a = 4 * 1.19
+        const b = 7 * 1.19
+        const c = 12 * 1.19
+        
+        const li = document.createElement('li')
+        li.innerHTML = 'Bruttopreis: ' + a
+        document.getElementById('result').appendChild(li)
+
+        const li2 = document.createElement('li')
+        li2.innerHTML = 'Bruttopreis: ' + b
+        document.getElementById('result').appendChild(li2)
+
+        const li3 = document.createElement('li')
+        li3.innerHTML = 'Bruttopreis: ' + c
+        document.getElementById('result').appendChild(li3)
+
+        /// ///////////////////////////////////////
+
+        const li4 = document.createElement('li')
+        li4.innerHTML = 'Bruttopreis:' + addVat(4)
+        document.getElementById('answer').appendChild(li4)
+
+        const li5 = document.createElement('li')
+        li5.innerHTML = 'Bruttopreis:' + addVat(7)
+        document.getElementById('answer').appendChild(li5)
+        
+        const li6 = document.createElement('li')
+        li6.innerHTML = 'Bruttopreis:' + addVat(12)
+        document.getElementById('answer').appendChild(li6)
+
+        function addVat (number) {
+          const result = number * 1.19
+          return result
+        }
+
+        /// ///////////////////////////////////////
+
+        displayPrice(4)
+        displayPrice(7)
+        displayPrice(12)
+        
+        function displayPrice (number) {
+          const result = number * 1.19
+          const li = document.createElement('li')
+          li.innerHTML = 'Bruttopreis: ' + result
+          document.getElementById('prices').appendChild(li)
+        }
+    </script>
+
+</body>
+</html>

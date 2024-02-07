@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variablen</title>
+</head>
+<body>
+    <h1>Variablen</h1>
+
+    <div id="result">Variablen</div>
+    <script>
+        let a = 4
+        a = a * 2
+        
+        document.getElementById('result').innerHTML = 'Der Wert von a beträgt ' + a
+
+        const name = 'Thomas'
+        document.getElementById('result').innerHTML += '<br>Mein Name ist ' + name
+
+        const windowWidth = window.innerWidth
+        document.getElementById('result').innerHTML += '<br>Die Fensterbreite beträgt ' + windowWidth + ' Pixel'
+    </script>
+
+</body>
+</html>

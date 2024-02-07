@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<body>
+    <h1>CSS</h1>
+    
+    <input type="text" id="name" placeholder="Farbe" spellcheck="false">
+    
+    <script>
+        document.querySelector('input').addEventListener('input', function () {
+          document.querySelector('h1').style.color = this.value
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutzereingaben</title>
+</head>
+<body>
+    <h1>Nutzereingaben</h1>
+    <h2>Willkommen <span id="output"></span></h2>
+    <input type="text" id="name" placeholder="Dein Name" autocomplete="off">
+    
+    <script>
+        document.querySelector('input').addEventListener('input', function () {
+          document.getElementById('output').textContent = this.value
+        })
+    </script>
+   
+
+
+</body>
+</html>
